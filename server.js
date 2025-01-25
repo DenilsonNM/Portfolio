@@ -7,7 +7,7 @@ const PORT = 3000; // Puerto donde escuchará el servidor
 // Crear el servidor
 const server = http.createServer((req, res) => {
   // Definir el archivo que se debe servir según la URL solicitada
-  let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+  let filePath = path.join(__dirname, 'docs', req.url === '/' ? 'index.html' : req.url);
 
   // Obtener la extensión del archivo solicitado
   const extname = path.extname(filePath);
