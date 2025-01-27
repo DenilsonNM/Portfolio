@@ -15,7 +15,7 @@
 
 </head>
 
-<body class=" ancho">
+<body class="ancho">
 
   <div class="div_page">
 
@@ -50,14 +50,14 @@
           </figure>
         </div>
 
-        <div class="div_center">
+        <main class="main_center">
           <h1>Denilson Nuñez</h1>
           <h3><span>Systems Engineer |</span></h3>
           <a href="" class="btn_cv">DOWNLOAD CV</a>
-        </div>
+        </main>
 
-        <main class="main_center">
-          <nav class="nav_center">
+        <div class="div_center">
+          <nav class="nav_tabs_center">
             <ul>
               <li><a href="#"><i class="fa-solid fa-code"></i> Tools</a></li>
               <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Projects</a></li>
@@ -65,8 +65,127 @@
               <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
           </nav>
-        </main>
+        </div>
       </header>
+
+      <!-- ------------------------------------- -->
+
+      <section class="section_tabs">
+
+        <article id="tab1">
+
+          <h2>Frontend</h2>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-html5"></i>
+              HTML</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>UI UX</li>
+            <li>SEO</li>
+            <li>Responsive</li>
+            <li>Semantic</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-css3-alt"></i>
+              CSS</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media Query</li>
+            <li>Variables</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-js"></i>
+              JavaScript</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Interactivitt</li>
+            <li>Dynamis</li>
+            <li>Variables</li>
+          </ul>
+        </article>
+
+        <article id="tab2">
+
+          <h2>Backend</h2>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-php"></i>
+              PHP</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Database connection</li>
+            <li>Security</li>
+            <li>Form Management</li>
+            <li>CRUD</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-solid fa-database"></i>
+              MySQL</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media Query</li>
+            <li>Variables</li>
+          </ul>
+        </article>
+
+        <article id="tab3">
+
+          <h2>More</h2>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-git-alt"></i>
+              GIT</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Database connection</li>
+            <li>Security</li>
+            <li>Form Management</li>
+            <li>CRUD</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-github"></i>
+              GITHUB</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media Query</li>
+            <li>Variables</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-github"></i>
+              GITHUB</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media Query</li>
+            <li>Variables</li>
+          </ul>
+
+          <div class="div_details">
+            <h3><i class="fa-brands fa-figma"></i>
+              FIGMA</h3>
+          </div>
+          <ul class="ul_sumary">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media Query</li>
+            <li>Variables</li>
+          </ul>
+        </article>
+
+      </section>
 
     </section>
 
@@ -74,6 +193,16 @@
 
     <section class="section_main_right"></section>
   </div>
+
+  <!-- ------------------------------------- -->
+
+  <script>
+    $(".div_details").click(function () {
+      var t = $(this);
+      var tp = t.next();
+      tp.slideToggle();
+    });
+  </script>
 </body>
 
 </html>
