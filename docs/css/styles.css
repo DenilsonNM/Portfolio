@@ -3,6 +3,7 @@
   --color-font-1: #333;
   --color-font-2: #666666;
   --color-detail: #cccccc;
+  --color-blue: #2e44a7;
 }
 
 /* DARKMODE */
@@ -195,12 +196,27 @@ a {
 .section_tabs article {
   /* width: 200px; */
   /* margin-left: 50px; */
+  /* text-align: center; */
+}
+
+.section_tabs h2 {
+  /* border: 1px red solid; */
+  width: 150px;
+  text-align: center;
 }
 
 .div_details {
   color: var(--color-font-2);
   cursor: pointer;
-  padding: 10px 0;
+  padding: 10px;
+  transition: all .20s linear;
+  border: 1px #00000000 solid;
+}
+
+.div_details:hover {
+  color: var(--color-font-1);
+  border: 1px var(--color-detail) solid;
+  color: var(--color-font-1);
 }
 
 .ul_sumary {
