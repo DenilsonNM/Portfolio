@@ -1,31 +1,35 @@
-const phrases = ["Developer", "Designer", "Freelancer"]; // Frases a mostrar
-const textElement = document.getElementById("text");
+const phrases = ["Systems Engineer", "Jr Frontend", "Freelancer"];
+const textElement = document.getElementById("typingeffect");
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
+textElement.textContent = "";
+
 function typeEffect() {
   const currentPhrase = phrases[phraseIndex];
+
   if (isDeleting) {
     textElement.textContent = currentPhrase.substring(0, charIndex--);
   } else {
     textElement.textContent = currentPhrase.substring(0, charIndex++);
   }
 
-  let typingSpeed = isDeleting ? 50 : 100; // Velocidad de escritura y borrado
+  let typingSpeed = isDeleting ? 80 : 100;
 
-  if (!isDeleting && charIndex === currentPhrase.length) {
-    typingSpeed = 1500; // Espera antes de borrar
+  if (!isDeleting && charIndex === currentPhrase.length + 1) {
+    typingSpeed = 2500; // Espera antes de borrar
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
-    phraseIndex = (phraseIndex + 1) % phrases.length; // Cambia a la siguiente frase
-    typingSpeed = 500; // Pequeña pausa antes de escribir la nueva frase
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+    typingSpeed = 500;
   }
 
   setTimeout(typeEffect, typingSpeed);
 }
 
-// Iniciar el efecto al cargar la página
-typeEffect();
-
+document.addEventListener("DOMContentLoaded", function () {
+  textElement.textContent = "";
+  setTimeout(typeEffect, 500);
+});
