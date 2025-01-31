@@ -150,8 +150,9 @@ a {
   padding-bottom: 40px;
 }
 
-.typingeffectcss {
-
+.typingeffect_css {
+  border-right: 3px solid var(--color-font-2);
+  padding-right: 5px;
   animation: blink 0.8s infinite;
 }
 
