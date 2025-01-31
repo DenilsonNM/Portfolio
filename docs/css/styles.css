@@ -1,19 +1,20 @@
 :root {
   --color-base: #f0f0f0;
-  --color-font-1: #333;
-  --color-font-2: #666666;
-  --color-detail: #cccccc;
-  --color-blue: #2e44a7;
+  --color-font-1: #302f35;
+  --color-font-2: #5d5d66;
+  --color-detail: #c2c2cf;
+  --color-opacity: #c2c2cfab;
 }
 
 /* DARKMODE */
 /* ------------------------------------- */
 
 .darkmode {
-  --color-base: #333;
+  --color-base: #302f35;
   --color-font-1: #f0f0f0;
-  --color-font-2: #b1b1b1;
-  --color-detail: #555;
+  --color-font-2: #c2c2cf;
+  --color-detail: #5d5d66;
+  --color-opacity: #5d5d66ab;
 }
 
 #theme_switch i:last-child {
@@ -28,6 +29,7 @@
   display: inline-block;
 }
 
+/* GLOBAL */
 /* ------------------------------------- */
 
 * {
@@ -80,14 +82,13 @@ a {
   text-decoration: none;
 }
 
-/* ------------------------------------- */
-
 .div_page {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   height: 100vh;
 }
 
+/* ------------------------------------- */
 /* LEFT */
 /* ------------------------------------- */
 
@@ -112,7 +113,7 @@ a {
   color: var(--color-font-1);
 }
 
-
+/* ------------------------------------- */
 /* CENTER */
 /* ------------------------------------- */
 
@@ -203,11 +204,11 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .section_tools article {
   width: 200px;
-  padding-bottom: 20px;
 }
 
 .section_tools h2 {
@@ -236,6 +237,67 @@ a {
   padding: 10px;
 }
 
+/* PROJECTS */
+/* ------------------------------------- */
+
+.section_projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.section_projects article {
+  width: 350px;
+}
+
+.section_projects figure {
+  position: relative;
+  height: 200px;
+}
+
+.section_projects a {
+  color: var(--color-font-2);
+  padding: 0 10px;
+}
+
+
+.div_hover_project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--color-opacity);
+  transition: all .20s linear;
+  opacity: 0;
+}
+
+.section_projects figure:hover .div_hover_project {
+  opacity: 1;
+}
+
+.div_tags_project {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: var(--color-font-2);
+}
+
+.h3_title_project {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ------------------------------------- */
 /* RIGHT */
 /* ------------------------------------- */
 
