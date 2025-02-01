@@ -330,6 +330,42 @@ p {
   padding: 10px;
 }
 
+/* ABOUT ME */
+/* ------------------------------------- */
+
+.section_aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.section_aboutme p {
+  color: var(--color-font-2);
+  padding: 10px;
+}
+
+.article_imginfo_aboutme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.article_imginfo_aboutme figure {
+  border-radius: 10px;
+}
+
+.div_tags_aboutme {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  color: var(--color-font-2);
+}
+
+.div_tags_aboutme p:hover {
+  color: var(--color-font-1);
+}
+
 /* ------------------------------------- */
 /* RIGHT */
 /* ------------------------------------- */
