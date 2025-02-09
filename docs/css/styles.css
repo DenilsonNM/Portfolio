@@ -1,7 +1,7 @@
 :root {
   --color-base: #f0f0f0;
-  --color-font-1: #302f35;
-  --color-font-2: #5d5d66;
+  --color-font-1: #222125;
+  --color-font-2: #5c5c66;
   --color-detail: #c2c2cf;
   --color-opacity: #c2c2cfab;
   --color-detail-2: #e6e6e6;
@@ -11,12 +11,12 @@
 /* ------------------------------------- */
 
 .darkmode {
-  --color-base: #302f35;
+  --color-base: #222125;
   --color-font-1: #f0f0f0;
-  --color-font-2: #c2c2cf;
-  --color-detail: #5d5d66;
-  --color-opacity: #5d5d66ab;
-  --color-detail-2: #36353b;
+  --color-font-2: #b7b7c4;
+  --color-detail: #44444b;
+  --color-opacity: #44444ba9;
+  --color-detail-2: #27262b;
 }
 
 #theme_switch i:last-child {
@@ -72,6 +72,7 @@ img {
 
 figure {
   overflow: hidden;
+  filter: saturate(0);
 }
 
 span {
@@ -137,8 +138,14 @@ p {
 }
 
 .figure_bg_center {
-  height: 200px;
+  height: 150px;
   border-radius: 0px 0px 10px 10px;
+  background-color: var(--color-font-1);
+}
+
+.figure_bg_center img {
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .figure_me_center {
@@ -148,6 +155,12 @@ p {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--color-base);
+  transition: all .20s linear;
+}
+
+.figure_me_center:hover {
+  filter: saturate(100%);
 }
 
 .main_center {
@@ -222,6 +235,7 @@ p {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .section_tools article {
