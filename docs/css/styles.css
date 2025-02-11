@@ -5,6 +5,8 @@
   --color-detail: #c2c2cf;
   --color-opacity: #c2c2cfab;
   --color-detail-2: #e6e6e6;
+  --color-i: #687491;
+
 }
 
 /* DARKMODE */
@@ -234,10 +236,9 @@ p {
 
 .section_tools {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding: 10px 50px 20px;
 }
 
 .section_tools article {
@@ -270,7 +271,13 @@ p {
   display: none;
   color: var(--color-font-2);
   list-style: inside;
-  padding: 10px;
+  padding: 0px 10px 10px;
+}
+
+.ul_sumary_alt {
+  color: var(--color-font-2);
+  list-style: inside;
+  padding: 0px 10px 10px;
 }
 
 /* PROJECTS */
