@@ -423,6 +423,7 @@ p {
 .div_wip {
   text-align: center;
   color: var(--color-font-2);
+  padding: 20px;
 }
 
 /* ------------------------------------- */
