@@ -85,6 +85,7 @@ figure:hover img {
 
 span {
   color: var(--color-font-2);
+  transition: all .15s linear;
 }
 
 a {
@@ -200,6 +201,25 @@ p {
 
 .btn_cv:hover {
   background-color: var(--color-base);
+  color: var(--color-font-1);
+}
+
+.copyfield {
+  border: 1px var(--color-detail) solid;
+  display: flex;
+}
+
+#copytext {
+  padding: 10px;
+}
+
+#copybtn {
+  padding: 10px;
+  background-color: var(--color-detail);
+  cursor: pointer;
+}
+
+.copyfield:hover #copybtn {
   color: var(--color-font-1);
 }
 
