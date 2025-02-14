@@ -4,7 +4,7 @@
   --color-font-2: #5e5a66;
   --color-detail: #c2c2cf;
   --color-opacity: #babaceab;
-  --color-detail-2: #e1ddec;
+  --color-detail-2: #ddddec;
   --color-i: #687491;
 
 }
@@ -369,6 +369,11 @@ p {
   padding: 20px 50px;
 }
 
+.section_aboutme span {
+  font-weight: bold;
+  color: var(--color-font-1);
+}
+
 .section_aboutme p {
   color: var(--color-font-2);
   padding: 10px;
@@ -397,14 +402,28 @@ p {
   color: var(--color-font-1);
 }
 
-.article_abutme {
+.article_aboutme {
   border-bottom: 1px var(--color-detail) solid;
 }
 
+.article_aboutme ul {
+  list-style: disc;
+  padding-left: 30px;
+}
 
+.article_aboutme a {
+  color: var(--color-font-1);
+  font-weight: bold;
+}
+
+
+/* SERVICES */
 /* ------------------------------------- */
 
-
+.div_wip {
+  text-align: center;
+  color: var(--color-font-2);
+}
 
 /* ------------------------------------- */
 /* RIGHT */
