@@ -1,10 +1,9 @@
 :root {
   --color-base: #eeeeee;
   --color-font-1: #242327;
-  --color-font-2: #5e5a66;
-  --color-detail: #c2c2cf;
+  --color-font-2: #5a5663;
+  --color-detail: #c8c8d8;
   --color-opacity: #babaceab;
-  --color-detail-2: #ddddec;
   --color-i: #687491;
 
 }
@@ -18,7 +17,6 @@
   --color-font-2: #b7b7c4;
   --color-detail: #3c3c45;
   --color-opacity: #414148a9;
-  --color-detail-2: #2a2930;
 }
 
 #theme_switch i:last-child {
@@ -241,7 +239,7 @@ p {
 .nav_tabs_center a {
   color: var(--color-font-2);
   padding: 20px 30px;
-  border-top: 2px var(--color-detail) solid;
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 .nav_tabs_center a:hover,
@@ -251,14 +249,14 @@ p {
 }
 
 .ul_tabs li.active {
-  background-color: var(--color-detail-2);
+  background-color: var(--color-detail);
 }
 
 /* TOOLS */
 /* ------------------------------------- */
 
 .section_tools {
-  padding: 10px 50px 20px;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
