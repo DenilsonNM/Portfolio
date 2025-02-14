@@ -1,0 +1,31 @@
+/* .div_menu_responsive {} */
+
+@media screen and (max-width: 980px) {
+
+  .div_page {
+    display: block;
+    height: 100vh;
+  }
+
+  /* ------------------------------------- */
+
+  .section_main_left {
+    border: none;
+    z-index: 100;
+    background-color: var(--color-opacity);
+    /* display: none; */
+  }
+
+  .section_main_left ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  /* ------------------------------------- */
+
+  .section_main_right {
+    display: none;
+  }
+
+}

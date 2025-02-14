@@ -2,8 +2,8 @@
   --color-base: #eeeeee;
   --color-font-1: #242327;
   --color-font-2: #5a5663;
-  --color-detail: #c8c8d8;
-  --color-opacity: #babaceab;
+  --color-detail: #c8ccd8;
+  --color-opacity: #eeeeee83;
   --color-i: #687491;
 
 }
@@ -16,7 +16,7 @@
   --color-font-1: #eeeeee;
   --color-font-2: #b7b7c4;
   --color-detail: #3c3c45;
-  --color-opacity: #414148a9;
+  --color-opacity: #24232785;
 }
 
 #theme_switch i:last-child {
@@ -137,6 +137,7 @@ p {
 .section_main_center {
   overflow-y: auto;
   scrollbar-width: none;
+  position: relative;
 }
 
 /* .header_center {} */
@@ -229,7 +230,7 @@ p {
 
 .div_center {
   text-align: center;
-  /* border: 1px red solid; */
+  margin-bottom: 10px;
 }
 
 .nav_tabs_center ul {
@@ -469,27 +470,4 @@ p {
   border-left: 1px var(--color-detail) solid;
   position: sticky;
   top: 0;
-}
-
-
-/* ------------------------------------- */
-@media screen and (max-width: 980px) {
-
-  .div_page {
-    display: block;
-    height: 100vh;
-  }
-
-  /* ------------------------------------- */
-
-  .section_main_left {
-    display: none;
-  }
-
-  /* ------------------------------------- */
-
-  .section_main_right {
-    display: none;
-  }
-
 }
