@@ -3,7 +3,7 @@
   --color-font-1: #242327;
   --color-font-2: #5a5663;
   --color-detail: #c8ccd8;
-  --color-opacity: #eeeeee83;
+  --color-opacity: #eeeeeec4;
   --color-i: #687491;
 
 }
@@ -16,7 +16,7 @@
   --color-font-1: #eeeeee;
   --color-font-2: #b7b7c4;
   --color-detail: #3c3c45;
-  --color-opacity: #24232785;
+  --color-opacity: #242327c7;
 }
 
 #theme_switch i:last-child {
@@ -43,8 +43,8 @@
 .ancho {
   max-width: 1200px;
   margin: auto;
-  border-right: 1px var(--color-detail) solid;
-  border-left: 1px var(--color-detail) solid;
+  /* border-right: 1px var(--color-detail) solid;
+  border-left: 1px var(--color-detail) solid; */
 }
 
 body {
@@ -95,7 +95,6 @@ a {
 
 p {
   transition: all .15s linear;
-  color: var(--color-font-2);
 }
 
 .div_page {
@@ -223,6 +222,25 @@ p {
 #copybtn:hover {
   color: var(--color-font-1);
   background-color: var(--color-base);
+}
+
+.div_status {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-detail);
+  border: 1px var(--color-detail) solid;
+  padding: 10px;
+  transition: all .15s linear;
+  color: var(--color-font-2);
+  display: flex;
+  gap: 10px;
+}
+
+.div_status:hover {
+  background-color: var(--color-base);
+  color: var(--color-font-1);
 }
 
 /* TABS */
@@ -398,6 +416,7 @@ p {
 
 .p_project_desc {
   padding: 10px;
+  color: var(--color-font-2);
 }
 
 /* ABOUT ME */

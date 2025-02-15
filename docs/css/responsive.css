@@ -30,7 +30,24 @@
 }
 
 @media screen and (max-width: 480px) {
+
   .section_main_left span {
     display: none;
+  }
+
+  /* ------------------------------------- */
+
+  .div_status {
+    top: 30%;
+    left: 50%;
+    cursor: pointer;
+  }
+
+  .div_status p {
+    display: none;
+  }
+
+  .div_status:hover p {
+    display: block;
   }
 }
