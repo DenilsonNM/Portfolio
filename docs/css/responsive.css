@@ -21,6 +21,11 @@
     flex-wrap: wrap;
   }
 
+  .figure_bg_center {
+    max-height: 200px;
+
+  }
+
   /* ------------------------------------- */
 
   .section_main_right {
