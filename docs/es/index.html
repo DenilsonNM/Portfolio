@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denilson Nuñez</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="application/javascript" src="js/darkmode.js" defer></script>
+  <script type="application/javascript" src="../js/darkmode.js" defer></script>
 
   <!-- ------------------------------------- -->
 
@@ -24,20 +25,23 @@
       <nav class="nav_left">
         <ul>
           <li><a href="mailto:denilsonjnm31@gmail.com?subject=I%20want%20to%20know%20more%20about%20you">
-              <i class="fa-solid fa-envelope"></i> Mail</a></li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>Correo</span>
+            </a></li>
           <li><a href="https://www.linkedin.com/in/denilson-nu%C3%B1ez-216322295/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-          <li><a href="https://github.com/DenilsonNM" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a></li>
+          <li><a href="https://github.com/DenilsonNM" target="_blank"><i class="fa-brands fa-github"></i>
+              <span>Github</span></a>
           </li>
 
           <li>
             <a href="#" id="theme_switch">
               <i class="fa-solid fa-moon"></i>
-              <i class="fa-solid fa-sun"></i> Theme</a>
+              <i class="fa-solid fa-sun"></i> Tema</a>
           </li>
           <li>
-            <a href="es/index.html" class="lang_switch" data-lang="en">
-              <i class="fa-solid fa-language"></i> Es</a>
+            <a href="../index.html" class="lang_switch" data-lang="es">
+              <i class="fa-solid fa-language"></i> En</a>
           </li>
         </ul>
       </nav>
@@ -46,31 +50,39 @@
     <!-- ------------------------------------- -->
 
     <section class="section_main_center">
+
       <header class="header_center">
 
         <div class="div_header_figures">
           <figure class="figure_bg_center">
-            <img src="img/background.png" alt="">
+            <img src="../img/background.gif" alt="">
           </figure>
           <figure class="figure_me_center">
-            <img src="img/noimage.png" alt="">
+            <img src="../img/me.png" alt="">
           </figure>
+          <div class="div_status">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Disponible para Trabajar</p>
+          </div>
         </div>
 
         <main class="main_center">
           <h1>Denilson Nuñez</h1>
-          <h3><span>I'm </span><span id="typingeffect" class="typingeffect_css"></span></h3>
-          <a href="" class="btn_cv"><i class="fa-solid fa-download"></i> DOWNLOAD CV</a>
+          <h3><span>Soy </span><span id="typingeffect" class="typingeffect_css"></span></h3>
+          <a href="" class="btn_cv"><i class="fa-solid fa-download"></i> Descargar CV</a>
+          <div class="copyfield">
+            <span id="copytext">denilsonjnm31@gmail.com</span>
+            <span id="copybtn">Copiar</span>
+          </div>
         </main>
 
         <div class="div_center">
           <nav class="nav_tabs_center">
             <ul class="ul_tabs">
-              <li><a href="#tab1"><i class="fa-solid fa-code"></i> Tools</a></li>
-              <li><a href="#tab2"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
-              <li><a href="#tab3"><i class="fa-solid fa-user"></i> About me</a></li>
-              <li><a href="#tab4"><i class="fa-solid fa-briefcase"></i> Services</a></li>
-              <li><a href="#tab5"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+              <li><a href="#tab1"><i class="fa-solid fa-code"></i> Herramientas</a></li>
+              <li><a href="#tab2"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
+              <li><a href="#tab3"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+              <li><a href="#tab4"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
             </ul>
           </nav>
         </div>
@@ -80,154 +92,164 @@
 
       <section class="section_tools tab_content" id="tab1">
 
-        <article>
+        <a id="toggleAll">Ocultar</a>
 
-          <h2>Frontend</h2>
+        <div class="div_articles_tools">
+          <article>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-html5"></i>
-              HTML</h3>
-          </div>
-          <ul class="ul_sumary_alt">
-            <li>UI/UX</li>
-            <li>SEO</li>
-            <li>Responsive</li>
-            <li>Semantic</li>
-          </ul>
+            <h2>Frontend</h2>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-css3-alt"></i>
-              CSS</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>Flexbox</li>
-            <li>Grid</li>
-            <li>Media Query</li>
-            <li>Variables</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-html5"></i>
+                HTML</h3>
+            </div>
+            <ul class="ul_sumary_alt">
+              <li>UI/UX</li>
+              <li>SEO</li>
+              <li>Responsive</li>
+              <li>Semantic</li>
+            </ul>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-js"></i>
-              JavaScript</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>Interactivity</li>
-            <li>Dynamism</li>
-            <li>libraries</li>
-            <li>Event handling</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-css3-alt"></i>
+                CSS</h3>
+            </div>
+            <ul class="ul_sumary">
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Media Query</li>
+              <li>Variables</li>
+            </ul>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-figma"></i>
-              FIGMA</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>Prototyping</li>
-            <li>Design systems</li>
-            <li>Collaboration</li>
-          </ul>
-        </article>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-js"></i>
+                JavaScript</h3>
+            </div>
+            <ul class="ul_sumary">
+              <li>Interactivity</li>
+              <li>Dynamism</li>
+              <li>libraries</li>
+              <li>Event handling</li>
+            </ul>
+          </article>
 
-        <article>
+          <article>
 
-          <h2>Backend</h2>
+            <h2>Backend</h2>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-php"></i>
-              PHP</h3>
-          </div>
-          <ul class="ul_sumary_alt">
-            <li>Database connection</li>
-            <li>Security</li>
-            <li>Form Management</li>
-            <li>CRUD</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-php"></i>
+                PHP</h3>
+            </div>
+            <ul class="ul_sumary_alt">
+              <li>Database connection</li>
+              <li>Security</li>
+              <li>Form Management</li>
+              <li>CRUD</li>
+            </ul>
 
-          <div class="div_details">
-            <h3><i class="fa-solid fa-database"></i>
-              MySQL</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>Normalization</li>
-            <li>Maintenance</li>
-            <li>Queries</li>
-            <li>Database design</li>
-          </ul>
-        </article>
+            <div class="div_details">
+              <h3><i class="fa-solid fa-database"></i>
+                MySQL</h3>
+            </div>
+            <ul class="ul_sumary">
+              <li>Normalization</li>
+              <li>Maintenance</li>
+              <li>Queries</li>
+              <li>Database design</li>
+            </ul>
+          </article>
 
-        <article>
+          <article>
 
-          <h2>DevOps</h2>
+            <h2>DevOps</h2>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-github"></i>
-              GITHUB</h3>
-          </div>
-          <ul class="ul_sumary_alt">
-            <li>Issue tracking</li>
-            <li>Pull requests</li>
-            <li>Collaborative</li>
-            <li>CI/CD</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-github"></i>
+                GITHUB</h3>
+            </div>
+            <ul class="ul_sumary_alt">
+              <li>Issue tracking</li>
+              <li>Pull requests</li>
+              <li>Collaborative</li>
+              <li>CI/CD</li>
+            </ul>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-git-alt"></i>
-              GIT</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>Version control</li>
-            <li>Branching</li>
-            <li>Merging</li>
-            <li>Management</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-git-alt"></i>
+                GIT</h3>
+            </div>
+            <ul class="ul_sumary">
+              <li>Version control</li>
+              <li>Branching</li>
+              <li>Merging</li>
+              <li>Management</li>
+            </ul>
 
-        </article>
+          </article>
 
-        <article>
+          <article>
 
-          <h2>Learning</h2>
+            <h2>Aprendiendo</h2>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-vuejs"></i>
-              Vue.js</h3>
-          </div>
-          <ul class="ul_sumary_alt">
-            <li>Component-based</li>
-            <li>State management</li>
-            <li>Vue Router</li>
-            <li>Reusable templates</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-vuejs"></i>
+                Vue.js</h3>
+            </div>
+            <ul class="ul_sumary_alt">
+              <li>Component-based</li>
+              <li>State management</li>
+              <li>Vue Router</li>
+              <li>Reusable templates</li>
+            </ul>
 
-          <div class="div_details">
-            <h3><i class="fa-brands fa-node-js"></i>
-              Node.js</h3>
-          </div>
-          <ul class="ul_sumary">
-            <li>SSR</li>
-            <li>SSG</li>
-            <li>API routes</li>
-          </ul>
+            <div class="div_details">
+              <h3><i class="fa-brands fa-node-js"></i>
+                Node.js</h3>
+            </div>
+            <ul class="ul_sumary">
+              <li>SSR</li>
+              <li>SSG</li>
+              <li>API routes</li>
+            </ul>
 
-        </article>
+          </article>
+
+          <article>
+
+            <h2>Extra</h2>
+
+            <div class="div_details">
+              <h3><i class="fa-brands fa-figma"></i>
+                FIGMA</h3>
+            </div>
+            <ul class="ul_sumary_alt">
+              <li>Prototyping</li>
+              <li>Design systems</li>
+              <li>Collaboration</li>
+            </ul>
+
+          </article>
+        </div>
 
       </section>
+
+      <!-- ------------------------------------- -->
 
       <section class="section_projects tab_content" id="tab2">
 
         <article>
           <figure>
-            <img src="img/noimage.png" alt="">
+            <img src="../img/noimage.png" alt="">
             <div class="div_hover_project">
-              <p>Rapid prototyping web-based training platform</p>
-              <div>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                <a href="">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/DenilsonNM/3DPrinter-Explorer.git">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </figure>
           <h3 class="h3_title_project">3DPrinter Explorer</h3>
+          <p class="p_project_desc">Plataforma web instructora de prototipado rapido</p>
           <div class="div_tags_project">
             <p><i class="fa-brands fa-html5"></i>
               HTML</p>
@@ -240,18 +262,16 @@
 
         <article>
           <figure>
-            <img src="img/noimage.png" alt="">
+            <img src="../img/noimage.png" alt="">
             <div class="div_hover_project">
-              <p>Promotional landing page</p>
-              <div>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                <a href="">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </figure>
           <h3 class="h3_title_project">Physiotherapy</h3>
+          <p class="p_project_desc">Pagina promocional</p>
           <div class="div_tags_project">
             <p><i class="fa-brands fa-html5"></i>
               HTML</p>
@@ -261,34 +281,80 @@
         </article>
       </section>
 
+      <!-- ------------------------------------- -->
+
       <section class="section_aboutme tab_content" id="tab3">
 
-        <article class="article_imginfo_aboutme">
-          <figure>
-            <img src="img/noimage.png" alt="">
-          </figure>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint ex enim optio amet? Quia, saepe
-            officiis velit fugit possimus provident assumenda ea placeat iste odit nam iusto eum vitae!</p>
+        <article class="article_aboutme">
+
+          <h3>Hola a todos <i class="fa-solid fa-hand"></i></h3>
+          <p>
+            Me desarrollo en áreas de tecnología, soporte y desarrollo web. Cuento con buenas actitudes sociales y
+            creativas
+            para
+            contribuir en
+            soluciones a problemáticas y lograr metas que beneficien a todos.
+            <br><br>
+
+            Comprometido en aprovechar las herramientas tecnológicas que me brinden experiencia y conocimiento para
+            mejorar
+            mis
+            habilidades de vida como profesional.
+          </p>
         </article>
 
-        <article class="article_abutme">
-          <h3>Last Education</h3>
-          <p>Instituto Tecnológico de Mérida | 2019 - 2025 - Computer Stystems Engineer</p>
+        <article class="article_aboutme">
+          <h3>Educación</h3>
+          <p>Instituto Tecnológico de Mérida | 2019 - 2025 | Ingeniería en Sistemas Computacionales</p>
         </article>
 
-        <article class="article_abutme">
-          <h3>Soft Skills</h3>
+        <article class="article_aboutme">
+          <h3>Habilidades blandas</h3>
           <div class="div_tags_aboutme">
             <p><i class="fa-solid fa-face-smile"></i></i>
-              Emotional intelligence</p>
-            <p><i class="fa-solid fa-arrow-trend-up"></i> Resilience</p>
-            <p><i class="fa-solid fa-people-group"></i> Teamwork</p>
-            <p><i class="fa-solid fa-handshake-simple"></i> Customer service</p>
-            <p><i class="fa-solid fa-bolt"></i> Fast learning</p>
+              Inteligencia emocional</p>
+            <p><i class="fa-solid fa-arrow-trend-up"></i> Resiliencia</p>
+            <p><i class="fa-solid fa-people-group"></i> Trabajo en equipo</p>
+            <p><i class="fa-solid fa-handshake-simple"></i> Servicio al cliente</p>
+            <p><i class="fa-solid fa-bolt"></i> Aprendizaje Rápido</p>
           </div>
+        </article>
+
+        <article class="article_aboutme">
+          <h3>Pequeños datos sobre mí</h3>
+          <ul>
+            <li>
+              <p>Soy un entusiasta de la ciencia y la tecnología desde que era un niño</p>
+            </li>
+            <li>
+              <p>Diseñé, dibujé y animé el arte de fondo usando <a href="https://krita.org/">Krita <i
+                    class="fa-solid fa-paintbrush"></i></a></p>
+            </li>
+            <li>
+              <p>Conoce más sobre mi trabajo en dibujo digital en <a
+                  href="https://www.instagram.com/pixel_conceptual_art?igsh=ODYzN3hqNzVjcmQ5">Instagram <i
+                    class="fa-brands fa-instagram"></i></a></p>
+            </li>
+            <li>
+              <p>Estoy buscando pertenecer a una comunidad dedicada al Desarrollo Web</p>
+            </li>
+            <li>
+              <p>La parte creativa es lo mío, sin embargo me gustan los retos y por eso estoy aprendiendo mucho sobre
+                Desarrollo Backend
+              </p>
+            </li>
+          </ul>
         </article>
       </section>
 
+      <!-- ------------------------------------- -->
+
+      <section class="section_services tab_content" id="tab4">
+
+        <div class="div_wip">
+          <p><i class="fa-solid fa-rotate fa-spin"></i> Trabajo en progreso...</p>
+        </div>
+      </section>
     </section>
 
     <!-- ------------------------------------- -->
@@ -297,17 +363,11 @@
   </div>
 
   <!-- ------------------------------------- -->
-
-  <script>
-    $(".div_details").click(function () {
-      var t = $(this);
-      var tp = t.next();
-      tp.slideToggle();
-    });
-  </script>
-  <script src="js/typingeffect.js"></script>
-  <!-- <script src="js/tabs.js"></script> -->
-  <script src="js/lang.js"></script>
+  <script src="../js/detailsumary.js"></script>
+  <script src="../js/typingeffect.js"></script>
+  <script src="../js/tabs.js"></script>
+  <script src="../js/lang.js"></script>
+  <script src="../js/copytext.js"></script>
 
 </body>
 
