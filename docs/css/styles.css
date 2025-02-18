@@ -292,7 +292,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-top: 10px;
+  gap: 20px;
 }
 
 #toggleAll {
@@ -300,6 +300,7 @@ p {
   background-color: var(--color-detail);
   border: 1px var(--color-detail) solid;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 #toggleAll:hover {
@@ -311,7 +312,8 @@ p {
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px var(--color-detail) solid;
+  /* border-bottom: 1px var(--color-detail) solid; */
+  border: 1px var(--color-detail) solid;
 }
 
 .div_details {
@@ -319,7 +321,8 @@ p {
   cursor: pointer;
   padding: 10px;
   transition: all .20s linear;
-  border: 1px #00000000 solid;
+  border: 1px var(--color-base) solid;
+  /* border-bottom: 1px var(--color-detail) solid; */
   text-align: center;
 }
 
@@ -332,15 +335,21 @@ p {
 
 .ul_sumary {
   display: none;
+  text-align: center;
   color: var(--color-font-2);
-  list-style: inside;
+  /* list-style: inside; */
   padding: 0px 10px 10px;
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 .ul_sumary_alt {
+  text-align: center;
   color: var(--color-font-2);
-  list-style: inside;
+  /* list-style: disc; */
   padding: 0px 10px 10px;
+  border-bottom: 1px var(--color-detail) solid;
+  /* border-left: 1px var(--color-detail) solid;
+  border-right: 1px var(--color-detail) solid; */
 }
 
 /* PROJECTS */
