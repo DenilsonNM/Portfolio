@@ -293,7 +293,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px;
 }
 
 #toggleAll {
@@ -362,6 +362,7 @@ p {
   justify-content: space-evenly;
   padding-bottom: 20px;
   padding-top: 20px;
+  row-gap: 20px;
 }
 
 .section_projects article {
@@ -392,6 +393,7 @@ p {
   transition: all .20s linear;
   opacity: 1;
   padding: 10px;
+  border: 1px var(--color-detail) solid;
 }
 
 .section_projects figure:hover .div_hover_project,
@@ -412,7 +414,7 @@ p {
   color: var(--color-font-2);
   /* justify-content: start; */
   border-top: 1px var(--color-detail) solid;
-
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 .div_tags_project p:hover {
