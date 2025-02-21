@@ -155,6 +155,7 @@ p {
 .figure_bg_center img {
   object-fit: fill;
   object-position: bottom;
+  filter: saturate(1);
 }
 
 .figure_me_center {
