@@ -1,0 +1,39 @@
+.section_projectview {
+  padding: 20px 50px;
+}
+
+.section_projectview p {
+  color: var(--color-font-2);
+  padding: 10px;
+}
+
+.section_projectview h2 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px var(--color-detail) solid;
+}
+
+.section_projectview ul {
+  list-style: disc;
+  padding: 10px;
+  padding-left: 30px;
+  border-bottom: 1px var(--color-detail) solid;
+}
+
+.div_tech_projectview {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px var(--color-detail) solid;
+
+}
+
+.div_tech_projectview p:hover {
+  color: var(--color-font-1);
+}
+
+.section_galleryfb {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
