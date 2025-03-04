@@ -383,7 +383,8 @@ i {
   position: relative;
   height: 200px;
   /* cursor: pointer; */
-  border-radius: 10px 10px 0px 10px;
+  /* border-radius: 10px 10px 0px 10px; */
+  background-color: var(--color-detail);
 }
 
 .section_projects figure:hover img {
