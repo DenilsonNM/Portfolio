@@ -169,7 +169,7 @@ i {
 }
 
 .figure_me_center {
-  max-width: 200px;
+  max-width: 160px;
   border-radius: 100%;
   position: absolute;
   top: 100%;
@@ -177,6 +177,7 @@ i {
   transform: translate(-50%, -50%);
   background-color: var(--color-detail);
   transition: all .20s linear;
+  /* filter: saturate(0); */
   /* border: 1px var(--color-detail) solid; */
 }
 
@@ -186,7 +187,7 @@ i {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 
