@@ -38,6 +38,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ancho {
   max-width: 1200px;
   margin: auto;
@@ -94,6 +98,10 @@ p {
   transition: all .15s linear;
 }
 
+hr {
+  border: 1px solid var(--color-detail);
+}
+
 .btn_1 {
   background-color: var(--color-detail);
   padding: clamp(5px, 1.5vh, 15px);
@@ -125,7 +133,7 @@ p {
 .div_fullpage {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* ------------------------------------- */
@@ -138,13 +146,14 @@ p {
 
 .nav_left {
   position: sticky;
-  top: 30vh;
+  top: 0;
   left: 0;
-  padding: 2vh;
+  /* padding: 2vh; */
+  padding: clamp(5px, 3vh, 20px);
 }
 
 .nav_left a {
-  padding: 1.5vh;
+  padding: clamp(5px, 1.5vh, 15px);
   border: 1px var(--color-base) solid;
   width: 100%;
 }
@@ -271,7 +280,7 @@ p {
 .div_articles_tools h2 {
   text-align: center;
   padding: clamp(5px, 1.5vh, 15px);
-  margin-bottom: clamp(10px, 2vh, 20px);
+  /* margin-bottom: clamp(10px, 2vh, 20px); */
   border-bottom: 1px var(--color-detail) solid;
 }
 
