@@ -265,13 +265,14 @@ p {
 
 .section_tools article {
   width: 200px;
+  border: 1px var(--color-detail) solid;
 }
 
 .div_articles_tools h2 {
   text-align: center;
   padding: clamp(5px, 1.5vh, 15px);
   margin-bottom: clamp(10px, 2vh, 20px);
-  border: 1px var(--color-detail) solid;
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 .div_details {
@@ -295,7 +296,7 @@ p {
   text-align: center;
   color: var(--color-font-2);
   padding: 0px clamp(5px, 1.5vh, 15px) clamp(5px, 1.5vh, 15px);
-  border-bottom: 1px var(--color-detail) solid;
+  /* border-bottom: 1px var(--color-detail) solid; */
 }
 
 /* PROJECTS */
