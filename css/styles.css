@@ -105,6 +105,21 @@ p {
   color: var(--color-font-1);
 }
 
+.h2_title_section {
+  /* border-bottom: 1px var(--color-detail) solid; */
+  border-top: 1px var(--color-detail) solid;
+  text-align: center;
+  width: 100%;
+}
+
+.span_title_section {
+  background-color: var(--color-detail);
+  color: var(--color-font-2);
+  display: inline-block;
+  width: 50%;
+  padding: clamp(10px, 1.5vh, 20px);
+}
+
 /* ------------------------------------- */
 
 .div_fullpage {
@@ -148,6 +163,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: clamp(10px, 6vh, 50px);
 }
 
 .header_center {
@@ -170,7 +186,8 @@ p {
   flex-direction: column;
   gap: clamp(10px, 5vh, 50px);
   /* padding: 6vh 0 6vh 0; */
-  padding: clamp(10px, 6vh, 50px) 0 clamp(10px, 6vh, 50px) 0;
+  /* padding: clamp(10px, 6vh, 50px) 0 clamp(10px, 6vh, 50px) 0; */
+  padding-top: clamp(10px, 6vh, 50px);
 }
 
 .typingeffect_css {
@@ -199,6 +216,7 @@ p {
   background-color: var(--color-detail);
   cursor: pointer;
   border-left: 1px var(--color-detail) solid;
+  transition: all .15s linear;
 }
 
 #copybtn:hover {
@@ -228,12 +246,14 @@ p {
   width: 90%;
 }
 
-.h2_title_section {
-  padding: clamp(10px, 1.5vh, 20px);
-  border-bottom: 1px var(--color-detail) solid;
-  border-top: 1px var(--color-detail) solid;
-  text-align: center;
-  width: 100%;
+#toggleAll {
+  padding: clamp(5px, 1.5vh, 15px);
+  border: 1px var(--color-detail) solid;
+}
+
+#toggleAll:hover {
+  background-color: var(--color-detail);
+  color: var(--color-font-1);
 }
 
 .div_articles_tools {
@@ -276,6 +296,87 @@ p {
   color: var(--color-font-2);
   padding: 0px clamp(5px, 1.5vh, 15px) clamp(5px, 1.5vh, 15px);
   border-bottom: 1px var(--color-detail) solid;
+}
+
+/* PROJECTS */
+/* ------------------------------------- */
+
+.section_projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 5vh, 50px);
+  width: 90%;
+}
+
+.div_projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  row-gap: clamp(10px, 2vh, 20px);
+}
+
+.div_projects article {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1.5vh, 15px);
+}
+
+.div_projects figure {
+  position: relative;
+  background-color: var(--color-detail);
+  height: 200px;
+}
+
+.div_projects figure:hover img {
+  scale: 105%;
+}
+
+.div_hover_project {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-font-2);
+  transition: all .20s linear;
+  padding: clamp(5px, 1.5vh, 15px);
+  gap: clamp(5px, 1.5vh, 15px);
+}
+
+.div_hover_project a {
+  color: var(--color-detail);
+}
+
+.div_hover_project a:hover,
+.div_hover_project a:focus {
+  color: var(--color-base);
+}
+
+.div_tags_project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: clamp(5px, 1.5vh, 15px);
+  padding: clamp(5px, 1.5vh, 15px) 0 clamp(5px,
+      1.5vh,
+      15px) 0;
+  border-top: 1px var(--color-detail) solid;
+  border-bottom: 1px var(--color-detail) solid;
+}
+
+.div_tags_project p:hover {
+  color: var(--color-font-1);
+}
+
+.h3_title_project {
+  text-align: center;
+  color: var(--color-font-1);
 }
 
 /* ------------------------------------- */
