@@ -94,6 +94,17 @@ p {
   transition: all .15s linear;
 }
 
+.btn_1 {
+  background-color: var(--color-detail);
+  padding: clamp(5px, 1.5vh, 20px);
+  border: 1px var(--color-detail) solid;
+}
+
+.btn_1:hover {
+  background-color: var(--color-base);
+  color: var(--color-font-1);
+}
+
 /* ------------------------------------- */
 
 .div_fullpage {
@@ -133,6 +144,16 @@ p {
 /* CENTER */
 /* ------------------------------------- */
 
+.section_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_center {
+  width: 100%;
+}
+
 .div_header_figures {
   position: relative;
 }
@@ -147,8 +168,9 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 5vh;
-  padding: 6vh 0 6vh 0;
+  gap: clamp(10px, 5vh, 50px);
+  /* padding: 6vh 0 6vh 0; */
+  padding: clamp(10px, 6vh, 50px) 0 clamp(10px, 6vh, 50px) 0;
 }
 
 .typingeffect_css {
@@ -163,28 +185,17 @@ p {
   }
 }
 
-.btn_cv {
-  background-color: var(--color-detail);
-  padding: 1.5vh;
-  border: 1px var(--color-detail) solid;
-}
-
-.btn_cv:hover {
-  background-color: var(--color-base);
-  color: var(--color-font-1);
-}
-
 .copyfield {
   border: 1px var(--color-detail) solid;
   display: flex;
 }
 
 #copytext {
-  padding: 1.5vh;
+  padding: clamp(5px, 1.5vh, 20px);
 }
 
 #copybtn {
-  padding: 1.5vh;
+  padding: clamp(5px, 1.5vh, 20px);
   background-color: var(--color-detail);
   cursor: pointer;
   border-left: 1px var(--color-detail) solid;
@@ -200,18 +211,71 @@ p {
   top: 100%;
   left: 20%;
   transform: translate(-50%, -50%);
-  background-color: var(--color-detail);
-  border: 1px var(--color-detail) solid;
-  padding: 1.5vh;
   transition: all .15s linear;
-  color: var(--color-font-2);
   display: flex;
-  gap: 1vh;
+  gap: clamp(5px, 1vh, 10px);
 }
 
-.div_status:hover {
-  background-color: var(--color-base);
+/* TOOLS */
+/* ------------------------------------- */
+
+.section_tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  width: 90%;
+}
+
+.h2_title_section {
+  padding: 1.5vh;
+  border-bottom: 1px var(--color-detail) solid;
+  border-top: 1px var(--color-detail) solid;
+  text-align: center;
+  width: 100%;
+}
+
+.div_articles_tools {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* row-gap: 20px; */
+}
+
+.section_tools article {
+  width: 200px;
+}
+
+.div_articles_tools h2 {
+  text-align: center;
+  padding: 1.5vh;
+  margin-bottom: 2vh;
+  border: 1px var(--color-detail) solid;
+}
+
+.div_details {
+  color: var(--color-font-2);
+  cursor: pointer;
+  padding: 1.5vh;
+  transition: all .20s linear;
+  border: 1px var(--color-base) solid;
+  text-align: center;
+}
+
+.div_details:hover,
+.div_details:focus {
   color: var(--color-font-1);
+  border: 1px var(--color-detail) solid;
+  color: var(--color-font-1);
+}
+
+.ul_sumary {
+  display: none;
+  text-align: center;
+  color: var(--color-font-2);
+  padding: 0px 10px 10px;
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 /* ------------------------------------- */
