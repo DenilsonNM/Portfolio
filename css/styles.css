@@ -389,6 +389,36 @@ hr {
   color: var(--color-font-1);
 }
 
+/* ABOUT ME */
+/* ------------------------------------- */
+
+.section_aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.article_aboutme_1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.article_aboutme_1 figure {
+  background-color: var(--color-detail);
+  width: 400px;
+}
+
+/* SERVICES */
+/* ------------------------------------- */
+
+.div_wip {
+  text-align: center;
+  color: var(--color-font-2);
+  padding: 20px;
+}
+
 /* ------------------------------------- */
 /* RIGHT */
 /* ------------------------------------- */
