@@ -46,10 +46,19 @@
 body {
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
-  color: var(--color-font-1);
+  color: var(--color-font-2);
   background-color: var(--color-base);
   height: 100%;
   transition: all .20s linear;
+}
+
+h1,
+h2 {
+  color: var(--color-font-1);
+}
+
+h1 {
+  font-size: xx-large;
 }
 
 button {
@@ -78,6 +87,7 @@ a {
   transition: all .15s linear;
   text-decoration: none;
   cursor: pointer;
+  color: var(--color-font-2);
 }
 
 p {
@@ -108,7 +118,6 @@ p {
 }
 
 .nav_left a {
-  color: var(--color-font-2);
   padding: 1.5vh;
   border: 1px var(--color-base) solid;
   width: 100%;
@@ -124,8 +133,85 @@ p {
 /* CENTER */
 /* ------------------------------------- */
 
-.section_center {
-  height: 1200px;
+.div_header_figures {
+  position: relative;
+}
+
+.figure_bg_center {
+  height: 200px;
+  background-color: var(--color-font-2);
+}
+
+.main_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+  padding: 6vh 0 6vh 0;
+}
+
+.typingeffect_css {
+  border-right: 3px solid var(--color-font-2);
+  padding-right: 3px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.btn_cv {
+  background-color: var(--color-detail);
+  padding: 1.5vh;
+  border: 1px var(--color-detail) solid;
+}
+
+.btn_cv:hover {
+  background-color: var(--color-base);
+  color: var(--color-font-1);
+}
+
+.copyfield {
+  border: 1px var(--color-detail) solid;
+  display: flex;
+}
+
+#copytext {
+  padding: 1.5vh;
+}
+
+#copybtn {
+  padding: 1.5vh;
+  background-color: var(--color-detail);
+  cursor: pointer;
+  border-left: 1px var(--color-detail) solid;
+}
+
+#copybtn:hover {
+  color: var(--color-font-1);
+  background-color: var(--color-base);
+}
+
+.div_status {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-detail);
+  border: 1px var(--color-detail) solid;
+  padding: 1.5vh;
+  transition: all .15s linear;
+  color: var(--color-font-2);
+  display: flex;
+  gap: 1vh;
+}
+
+.div_status:hover {
+  background-color: var(--color-base);
+  color: var(--color-font-1);
 }
 
 /* ------------------------------------- */
