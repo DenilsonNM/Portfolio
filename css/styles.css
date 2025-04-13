@@ -74,10 +74,20 @@ p {
 
 /* ------------------------------------- */
 
-.div_fullpage {}
+.div_fullpage {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  height: 100vh;
+}
 
-.section_left {}
+.section_left {
+  background-color: red;
+}
 
-.section_center {}
+.section_center {
+  background-color: blue;
+}
 
-.section_right {}
+.section_right {
+  background-color: green;
+}
