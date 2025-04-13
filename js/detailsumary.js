@@ -5,13 +5,13 @@ $(document).ready(function () {
   });
 
   $("#toggleAll").click(function () {
-    let isVisible = $(".ul_sumary:visible, .ul_sumary_alt:visible").length > 0;
+    let isVisible = $(".ul_sumary:visible").length > 0;
 
     if (isVisible) {
-      $(".ul_sumary, .ul_sumary_alt").slideUp();
+      $(".ul_sumary").slideUp();
       $(this).text("Show all");
     } else {
-      $(".ul_sumary, .ul_sumary_alt").slideDown();
+      $(".ul_sumary").slideDown();
       $(this).text("Hide all");
     }
   });

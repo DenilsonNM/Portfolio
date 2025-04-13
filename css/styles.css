@@ -96,7 +96,7 @@ p {
 
 .btn_1 {
   background-color: var(--color-detail);
-  padding: clamp(5px, 1.5vh, 20px);
+  padding: clamp(5px, 1.5vh, 15px);
   border: 1px var(--color-detail) solid;
 }
 
@@ -191,11 +191,11 @@ p {
 }
 
 #copytext {
-  padding: clamp(5px, 1.5vh, 20px);
+  padding: clamp(5px, 1.5vh, 15px);
 }
 
 #copybtn {
-  padding: clamp(5px, 1.5vh, 20px);
+  padding: clamp(5px, 1.5vh, 15px);
   background-color: var(--color-detail);
   cursor: pointer;
   border-left: 1px var(--color-detail) solid;
@@ -224,12 +224,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5vh;
+  gap: clamp(10px, 5vh, 50px);
   width: 90%;
 }
 
 .h2_title_section {
-  padding: 1.5vh;
+  padding: clamp(10px, 1.5vh, 20px);
   border-bottom: 1px var(--color-detail) solid;
   border-top: 1px var(--color-detail) solid;
   text-align: center;
@@ -240,7 +240,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* row-gap: 20px; */
+  row-gap: clamp(10px, 2vh, 20px);
 }
 
 .section_tools article {
@@ -249,15 +249,15 @@ p {
 
 .div_articles_tools h2 {
   text-align: center;
-  padding: 1.5vh;
-  margin-bottom: 2vh;
+  padding: clamp(5px, 1.5vh, 15px);
+  margin-bottom: clamp(10px, 2vh, 20px);
   border: 1px var(--color-detail) solid;
 }
 
 .div_details {
   color: var(--color-font-2);
   cursor: pointer;
-  padding: 1.5vh;
+  padding: clamp(5px, 1.5vh, 15px);
   transition: all .20s linear;
   border: 1px var(--color-base) solid;
   text-align: center;
@@ -274,7 +274,7 @@ p {
   display: none;
   text-align: center;
   color: var(--color-font-2);
-  padding: 0px 10px 10px;
+  padding: 0px clamp(5px, 1.5vh, 15px) clamp(5px, 1.5vh, 15px);
   border-bottom: 1px var(--color-detail) solid;
 }
 
