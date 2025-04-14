@@ -395,19 +395,48 @@ hr {
 .section_aboutme {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px 50px;
+  gap: clamp(10px, 3vh, 30px);
+  width: 90%;
 }
 
 .article_aboutme_1 {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: clamp(10px, 3vh, 30px);
+  border-bottom: 1px var(--color-detail) solid;
+  padding: clamp(10px, 1.5vh, 15px);
 }
 
 .article_aboutme_1 figure {
   background-color: var(--color-detail);
   width: 400px;
+}
+
+.article_aboutme_2 {
+  padding: clamp(10px, 1.5vh, 15px);
+  border-bottom: 1px var(--color-detail) solid;
+}
+
+.article_aboutme_2 ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.div_tags_aboutme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: var(--color-font-2);
+}
+
+.div_tags_aboutme p:hover {
+  color: var(--color-font-1);
+}
+
+.article_aboutme_2 a {
+  color: var(--color-font-2);
+  text-decoration: underline;
 }
 
 /* SERVICES */
