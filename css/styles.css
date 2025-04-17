@@ -102,6 +102,13 @@ hr {
   border: 1px solid var(--color-detail);
 }
 
+.dn {
+  border-bottom: 1px var(--color-detail) solid;
+  padding: clamp(10px, 1.5vh, 20px);
+  width: 90%;
+  text-align: center;
+}
+
 .btn_1 {
   background-color: var(--color-detail);
   padding: clamp(5px, 1.5vh, 15px);
@@ -124,15 +131,16 @@ hr {
 }
 
 .h2_title_section {
-  /* border-bottom: 1px var(--color-detail) solid; */
-  border-top: 1px var(--color-detail) solid;
+  border-bottom: 1px var(--color-detail) solid;
+  /* border-top: 1px var(--color-detail) solid; */
   text-align: center;
   width: 100%;
 }
 
 .span_title_section {
-  background-color: var(--color-detail);
-  color: var(--color-font-2);
+  /* background-color: var(--color-detail); */
+  /* color: var(--color-font-2); */
+  /* border: 1px var(--color-detail) solid; */
   display: inline-block;
   width: 50%;
   padding: clamp(10px, 1.5vh, 20px);
@@ -280,7 +288,7 @@ hr {
 .div_articles_tools h2 {
   text-align: center;
   padding: clamp(5px, 1.5vh, 15px);
-  border: 1px var(--color-detail) solid;
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 .div_details {
@@ -376,7 +384,7 @@ hr {
       1.5vh,
       15px) 0;
   border-top: 1px var(--color-detail) solid;
-  border-bottom: 1px var(--color-detail) solid;
+  /* border-bottom: 1px var(--color-detail) solid; */
 }
 
 .div_tags_project p:hover {
@@ -394,8 +402,12 @@ hr {
 .section_aboutme {
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 3vh, 30px);
+  /* gap: clamp(10px, 3vh, 30px); */
   width: 90%;
+}
+
+.section_aboutme h3 {
+  color: var(--color-font-1);
 }
 
 .article_aboutme_1 {
@@ -403,8 +415,9 @@ hr {
   align-items: center;
   justify-content: center;
   gap: clamp(10px, 3vh, 30px);
-  border-bottom: 1px var(--color-detail) solid;
-  padding: clamp(10px, 1.5vh, 15px);
+  /* border-bottom: 1px var(--color-detail) solid; */
+  padding-top: clamp(10px, 5vh, 50px);
+  padding-bottom: clamp(10px, 1.5vh, 15px);
 }
 
 .article_aboutme_1 figure {
@@ -414,7 +427,7 @@ hr {
 
 .article_aboutme_2 {
   padding: clamp(10px, 1.5vh, 15px);
-  border-bottom: 1px var(--color-detail) solid;
+  /* border-bottom: 1px var(--color-detail) solid; */
 }
 
 .article_aboutme_2 ul {
