@@ -261,6 +261,8 @@ hr {
   transform: translate(-50%, -50%);
   transition: all .15s linear;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: clamp(5px, 1vh, 10px);
 }
 
@@ -435,6 +437,10 @@ hr {
 
 .section_aboutme h3 {
   color: var(--color-font-1);
+  display: inline-block;
+  border-bottom: 1px var(--color-detail) solid;
+  padding-bottom: clamp(10px, 1.5vh, 15px);
+  margin-bottom: clamp(10px, 1.5vh, 15px);
 }
 
 .article_aboutme_1 {
