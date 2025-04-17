@@ -205,7 +205,7 @@ hr {
 }
 
 .figure_bg_center {
-  height: 200px;
+  height: 230px;
   background-color: var(--color-font-2);
 }
 
@@ -304,7 +304,7 @@ hr {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  row-gap: clamp(10px, 2vh, 20px);
+  row-gap: clamp(10px, 3vh, 20px);
 }
 
 .section_tools article {
@@ -359,7 +359,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  row-gap: clamp(10px, 2vh, 20px);
+  row-gap: clamp(10px, 4vh, 30px);
 }
 
 .div_projects article {
