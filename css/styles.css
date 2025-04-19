@@ -156,7 +156,8 @@ hr {
 }
 
 .div_parallax {
-  background-image: url("/files/background.gif");
+  /* background-image: url("/files/background.gif"); */
+  background-image: url("/Portfolio/files/background.gif");
   /* filter: grayscale(100%); */
   height: 100px;
   width: 100%;
