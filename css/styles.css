@@ -1,8 +1,8 @@
 :root {
   --color-base: #eeeeee;
-  --color-font-1: #242327;
-  --color-font-2: #5a5663;
-  --color-detail: #cac8d8;
+  --color-font-1: #1e1d21;
+  --color-font-2: #514e58;
+  --color-detail: #c7c5d4;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
 }
@@ -11,11 +11,11 @@
 /* ------------------------------------- */
 
 .darkmode {
-  --color-base: #242327;
+  --color-base: #1e1d21;
   --color-font-1: #eeeeee;
-  --color-font-2: #b7b7c4;
-  --color-detail: #3c3c45;
-  --color-opacity: #242327c7;
+  --color-font-2: #a9a6b6;
+  --color-detail: #32323a;
+  --color-opacity: #1e1d21c7;
 }
 
 #theme_switch i:last-child {
