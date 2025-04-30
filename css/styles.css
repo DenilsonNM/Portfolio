@@ -168,9 +168,8 @@ hr {
 }
 
 .div_parallax {
-  background-image: url("/files/background.gif");
-  /* background-image: url("/Portfolio/files/background.gif"); */
-  /* filter: grayscale(100%); */
+  /* background-image: url("/files/background.gif"); */
+  background-image: url("/Portfolio/files/background.gif");
   height: 100px;
   height: clamp(50px, 15vh, 100px);
   width: 100%;
@@ -372,6 +371,7 @@ hr {
   text-align: center;
   padding: clamp(5px, 1.5vh, 15px);
   border-bottom: 1px var(--color-detail) solid;
+
 }
 
 .div_details {
