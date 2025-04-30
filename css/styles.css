@@ -30,6 +30,18 @@
   display: inline-block;
 }
 
+#theme_switch_res i:last-child {
+  display: none;
+}
+
+.darkmode #theme_switch_res i:first-child {
+  display: none;
+}
+
+.darkmode #theme_switch_res i:last-child {
+  display: inline-block;
+}
+
 /* GLOBAL */
 /* ------------------------------------- */
 
@@ -216,6 +228,10 @@ hr {
 .p_hr_movile {
   display: none;
   color: var(--color-detail);
+}
+
+.li_res {
+  display: none;
 }
 
 /* ------------------------------------- */
