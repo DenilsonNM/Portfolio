@@ -39,6 +39,10 @@
     display: none;
   }
 
+  .p_hr_movile {
+    display: block;
+  }
+
   /* ------------------------------------- */
 
   .section_right {
