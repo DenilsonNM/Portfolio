@@ -1,39 +1,59 @@
 .section_projectview {
-  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 6vh, 50px);
 }
 
-.section_projectview p {
-  color: var(--color-font-2);
-  padding: 10px;
+/* ------------------------------------- */
+
+.section_infoproject {
+  width: 90%;
+  margin-top: clamp(10px, 4vh, 40px);
 }
 
-.section_projectview h2 {
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px var(--color-detail) solid;
+.section_infoproject h2 {
+  padding: clamp(10px, 1.5vh, 20px);
 }
 
-.section_projectview ul {
-  list-style: disc;
-  padding: 10px;
-  padding-left: 30px;
-  border-bottom: 1px var(--color-detail) solid;
+.section_infoproject p {
+  padding: clamp(10px, 1.5vh, 15px);
 }
 
 .div_tech_projectview {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border-bottom: 1px var(--color-detail) solid;
-
+  padding: clamp(10px, 1.5vh, 15px);
+  border-top: 1px var(--color-detail) solid;
 }
 
 .div_tech_projectview p:hover {
   color: var(--color-font-1);
 }
 
-.section_galleryfb {
+/* ------------------------------------- */
+
+.section_gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 5vh, 50px);
+  width: 90%;
+}
+
+.section_gallery h2 {
+  padding: clamp(10px, 1.5vh, 20px);
+}
+
+.div_gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: clamp(10px, 1.5vh, 15px);
+  padding-top: clamp(10px, 1.5vh, 15px);
+}
+
+.div_gallery figure:hover img {
+  scale: 105%;
 }

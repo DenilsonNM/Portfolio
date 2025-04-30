@@ -51,6 +51,12 @@
     display: none;
   }
 
+  /* ------------------------------------- */
+
+  .div_gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media screen and (max-width: 730px) {
