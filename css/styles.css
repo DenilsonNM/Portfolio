@@ -367,10 +367,11 @@ hr {
   /* border-top: 1px var(--color-detail) solid; */
 }
 
-.div_articles_tools h2 {
+.div_articles_tools h3 {
   text-align: center;
   padding: clamp(5px, 1.5vh, 15px);
   border-bottom: 1px var(--color-detail) solid;
+  color: var(--color-font-1);
 
 }
 
