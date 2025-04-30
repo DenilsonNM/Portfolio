@@ -16,7 +16,7 @@
   }
 
   .nav_left {
-    padding-top: clamp(5px, 3vh, 20px);
+    padding: 5px;
   }
 
   .nav_left ul {
@@ -29,7 +29,10 @@
     border: 1px var(--color-transparent) solid;
   }
 
+  /* ------------------------------------- */
+
   .figure_bg_center {
+    height: auto;
     max-height: 230px;
   }
 
