@@ -168,8 +168,8 @@ hr {
 }
 
 .div_parallax {
-  background-image: url("/files/background.gif");
-  /* background-image: url("/Portfolio/files/background.gif"); */
+  /* background-image: url("/files/background.gif"); */
+  background-image: url("/Portfolio/files/background.gif");
   height: 100px;
   height: clamp(50px, 15vh, 100px);
   width: 100%;
