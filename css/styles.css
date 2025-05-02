@@ -412,11 +412,13 @@ hr {
 }
 
 .div_projects {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
-  row-gap: clamp(10px, 4vh, 30px);
+  row-gap: clamp(10px, 4vh, 30px); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 5vh, 35px);
 }
 
 .div_projects article {

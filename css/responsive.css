@@ -80,5 +80,13 @@
     cursor: pointer;
   }
 
+  /* ------------------------------------- */
 
+  .div_projects article {
+    width: auto;
+  }
+
+  .div_projects figure {
+    height: auto;
+  }
 }
