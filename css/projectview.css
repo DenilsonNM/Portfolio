@@ -9,7 +9,7 @@
 
 .section_infoproject {
   width: 90%;
-  margin-top: clamp(10px, 4vh, 40px);
+  /* margin-top: clamp(10px, 4vh, 40px); */
 }
 
 .section_infoproject h2 {
