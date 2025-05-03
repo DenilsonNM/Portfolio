@@ -356,15 +356,17 @@ hr {
 }
 
 .div_articles_tools {
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  row-gap: clamp(10px, 3vh, 20px);
+  row-gap: clamp(10px, 3vh, 20px); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 5vh, 35px);
 }
 
-.section_tools article {
+.div_articles_tools article {
   width: 200px;
-  /* border-top: 1px var(--color-detail) solid; */
 }
 
 .div_articles_tools h3 {
@@ -396,7 +398,7 @@ hr {
   text-align: center;
   color: var(--color-font-2);
   padding: 0px clamp(5px, 1.5vh, 15px) clamp(5px, 1.5vh, 15px);
-  /* border-bottom: 1px var(--color-detail) solid; */
+  border-bottom: 1px var(--color-detail) solid;
 }
 
 /* PROJECTS */
