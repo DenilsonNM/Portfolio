@@ -92,8 +92,13 @@
 
   /* ------------------------------------- */
 
+  .div_projects {
+    gap: clamp(10px, 2vh, 35px);
+  }
+
   .div_projects article {
     width: auto;
+
   }
 
   .div_projects figure {

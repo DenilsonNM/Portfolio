@@ -463,6 +463,10 @@ hr {
   color: var(--color-font-1);
 }
 
+.p_project_desc {
+  text-align: center;
+}
+
 .div_tags_project {
   display: flex;
   flex-wrap: wrap;
