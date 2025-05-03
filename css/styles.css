@@ -512,13 +512,13 @@ hr {
   justify-content: center;
   gap: clamp(10px, 3vh, 30px);
   /* border-bottom: 1px var(--color-detail) solid; */
+  padding: clamp(10px, 1.5vh, 15px);
   padding-top: clamp(10px, 5vh, 50px);
-  padding-bottom: clamp(10px, 1.5vh, 15px);
 }
 
 .article_aboutme_1 figure {
   background-color: var(--color-detail);
-  width: 400px;
+  width: 300px;
 }
 
 .article_aboutme_2 {
@@ -531,11 +531,19 @@ hr {
   padding-left: clamp(10px, 3vh, 30px);
 }
 
+.article_aboutme_2 li {
+  padding: clamp(5px, 1vh, 15px);
+}
+
 .div_tags_aboutme {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   color: var(--color-font-2);
+}
+
+.div_tags_aboutme p {
+  padding: clamp(5px, 1vh, 15px);
 }
 
 .div_tags_aboutme p:hover {

@@ -44,7 +44,6 @@
     display: block;
   }
 
-
   /* ------------------------------------- */
 
   .section_right {
@@ -103,5 +102,15 @@
 
   .div_projects figure {
     height: auto;
+  }
+
+  /* ------------------------------------- */
+
+  .article_aboutme_1 {
+    flex-direction: column-reverse;
+  }
+
+  .article_aboutme_1 figure {
+    width: 140px;
   }
 }
