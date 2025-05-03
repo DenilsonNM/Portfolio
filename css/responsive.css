@@ -56,6 +56,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* ------------------------------------- */
+
+  .btn_up {
+    display: none;
+  }
+
+  .footer-btn-up {
+    display: flex;
+  }
+
 }
 
 @media screen and (max-width: 730px) {
@@ -87,21 +97,6 @@
 
   .section_tools article {
     width: 140px;
-  }
-
-  /* ------------------------------------- */
-
-  .div_projects {
-    gap: clamp(10px, 2vh, 35px);
-  }
-
-  .div_projects article {
-    width: auto;
-
-  }
-
-  .div_projects figure {
-    height: auto;
   }
 
   /* ------------------------------------- */

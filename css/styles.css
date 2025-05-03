@@ -1,7 +1,7 @@
 :root {
   --color-base: #eeeeee;
   --color-font-1: #1e1d21;
-  --color-font-2: #5e5a66;
+  --color-font-2: #625e6b;
   --color-detail: #c7c5d4;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
@@ -13,7 +13,7 @@
 .darkmode {
   --color-base: #1e1d21;
   --color-font-1: #eeeeee;
-  --color-font-2: #9d9aaa;
+  --color-font-2: #a49fb8;
   --color-detail: #32323a;
   --color-opacity: #1e1d21c7;
 }
@@ -414,13 +414,13 @@ hr {
 }
 
 .div_projects {
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: clamp(10px, 4vh, 30px); */
-  display: grid;
+  row-gap: clamp(10px, 4vh, 30px);
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: clamp(10px, 5vh, 35px);
+  gap: clamp(10px, 5vh, 35px); */
 }
 
 .div_projects article {
@@ -566,6 +566,29 @@ hr {
 .div_wip {
   text-align: center;
   padding: clamp(10px, 3vh, 30px);
+}
+
+/* ------------------------------------- */
+
+.footer-btn-up {
+  width: 40px;
+  height: 40px;
+  display: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  z-index: 101;
+  border: 1px var(--color-detail) solid;
+  color: var(--color-font-2);
+  background-color: var(--color-base);
+}
+
+.footer-btn-up:hover {
+  background-color: var(--color-detail);
 }
 
 /* ------------------------------------- */
