@@ -1,20 +1,24 @@
 :root {
   --color-base: #eeeeee;
-  --color-font-1: #1e1d21;
-  --color-font-2: #625e6b;
-  --color-detail: #c7c5d4;
+  --color-font-1: #19181b;
+  --color-font-2: #5a5663;
+  --color-detail: #cac8d8;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
+  --color-red: #dc5259;
+  --color-green: #6bbe66;
+  --color-blue: #1890ad;
+  --color-yellow: #e0ae58;
 }
 
 /* DARKMODE */
 /* ------------------------------------- */
 
 .darkmode {
-  --color-base: #1e1d21;
+  --color-base: #19181b;
   --color-font-1: #eeeeee;
-  --color-font-2: #a49fb8;
-  --color-detail: #32323a;
+  --color-font-2: #8e8c9b;
+  --color-detail: #292930;
   --color-opacity: #1e1d21c7;
 }
 
@@ -113,6 +117,22 @@ p {
 
 hr {
   border: 1px solid var(--color-detail);
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.yellow {
+  color: var(--color-yellow);
 }
 
 .dn {
@@ -374,7 +394,10 @@ hr {
   padding: clamp(5px, 1.5vh, 15px);
   border-bottom: 1px var(--color-detail) solid;
   color: var(--color-font-1);
+}
 
+.div_articles_tools i {
+  color: var(--color-red);
 }
 
 .div_details {
@@ -438,6 +461,10 @@ hr {
 
 .div_projects figure:hover img {
   scale: 105%;
+}
+
+.div_tags_project i {
+  color: var(--color-blue);
 }
 
 .div_hover_project {
@@ -553,6 +580,10 @@ hr {
 .article_aboutme_2 a {
   color: var(--color-font-2);
   text-decoration: underline;
+}
+
+.article_aboutme_2 i {
+  color: var(--color-yellow);
 }
 
 /* SERVICES */
