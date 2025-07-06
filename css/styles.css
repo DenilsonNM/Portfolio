@@ -5,10 +5,8 @@
   --color-detail: #cac8d8;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
-  --color-red: #dc5259;
-  --color-green: #6bbe66;
-  --color-blue: #1890ad;
-  --color-yellow: #e0ae58;
+  --color-neon-1: #ea176f;
+  --color-neon-2: #5bfff7;
 }
 
 /* DARKMODE */
@@ -117,22 +115,6 @@ p {
 
 hr {
   border: 1px solid var(--color-detail);
-}
-
-.red {
-  color: var(--color-red);
-}
-
-.green {
-  color: var(--color-green);
-}
-
-.blue {
-  color: var(--color-blue);
-}
-
-.yellow {
-  color: var(--color-yellow);
 }
 
 .dn {
@@ -396,10 +378,6 @@ hr {
   color: var(--color-font-1);
 }
 
-.div_articles_tools i {
-  color: var(--color-red);
-}
-
 .div_details {
   color: var(--color-font-2);
   cursor: pointer;
@@ -461,10 +439,6 @@ hr {
 
 .div_projects figure:hover img {
   scale: 105%;
-}
-
-.div_tags_project i {
-  color: var(--color-blue);
 }
 
 .div_hover_project {
@@ -583,7 +557,8 @@ hr {
 }
 
 .article_aboutme_2 i {
-  color: var(--color-yellow);
+  color: var(--color-neon-1);
+  text-shadow: 0 0 2px var(--color-neon-1), 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 /* SERVICES */
@@ -628,4 +603,9 @@ hr {
 
 .section_right {
   border-left: 1px solid var(--color-detail);
+}
+
+i {
+  color: var(--color-neon-1);
+  /* text-shadow: 0 0 2px var(--color-neon-1), 0 0 10px rgba(255, 255, 255, 0.1); */
 }
