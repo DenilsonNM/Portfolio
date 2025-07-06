@@ -9,10 +9,11 @@ $(document).ready(function () {
 
     if (isVisible) {
       $(".ul_sumary").slideUp();
-      $(this).text("Show all");
+      $(this).html('<i class="fa-solid fa-eye"></i> Show all');
     } else {
       $(".ul_sumary").slideDown();
-      $(this).text("Hide all");
+      $(this).html('<i class="fa-solid fa-eye-slash"></i> Hide all');
     }
   });
 });
+
