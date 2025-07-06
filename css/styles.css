@@ -1,8 +1,8 @@
 :root {
-  --color-base: #eeeeee;
-  --color-font-1: #19181b;
+  --color-base: #e3e2e5;
+  --color-font-1: #1f1e22;
   --color-font-2: #5a5663;
-  --color-detail: #cac8d8;
+  --color-detail: #cccad6;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
   --color-neon-1: #ea176f;
@@ -14,7 +14,7 @@
 
 .darkmode {
   --color-base: #19181b;
-  --color-font-1: #eeeeee;
+  --color-font-1: #e3e2e5;
   --color-font-2: #8e8c9b;
   --color-detail: #292930;
   --color-opacity: #1e1d21c7;
@@ -125,9 +125,11 @@ hr {
 }
 
 .btn_1 {
-  background-color: var(--color-detail);
+  background-color: var(--color-font-1);
   padding: clamp(5px, 1.5vh, 15px);
-  border: 2px var(--color-detail) solid;
+  border: 2px var(--color-font-1) solid;
+  color: var(--color-detail);
+  /* border-radius: clamp(5px, 1vh, 8px); */
 }
 
 .btn_1:hover {
@@ -298,15 +300,15 @@ hr {
 
 #copybtn {
   padding: clamp(5px, 1.5vh, 15px);
-  background-color: var(--color-detail);
+  /* background-color: var(--color-font-1); */
   cursor: pointer;
   border-left: 2px var(--color-detail) solid;
   transition: all .15s linear;
 }
 
 #copybtn:hover {
-  color: var(--color-font-1);
-  background-color: var(--color-base);
+  color: var(--color-detail);
+  background-color: var(--color-font-1);
 }
 
 .div_status {
@@ -418,7 +420,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: clamp(10px, 4vh, 30px);
+  row-gap: clamp(20px, 4vh, 40px);
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(10px, 5vh, 35px); */
@@ -428,7 +430,7 @@ hr {
   width: 300px;
   display: flex;
   flex-direction: column;
-  gap: clamp(5px, 1.5vh, 15px);
+  gap: clamp(5px, 2.5vh, 20px);
 }
 
 .div_projects figure {
@@ -599,8 +601,3 @@ hr {
 .section_right {
   border-left: 2px solid var(--color-detail);
 }
-
-/* i {
-  color: var(--color-neon-1);
-  text-shadow: 0 0 2px var(--color-neon-1), 0 0 10px rgba(255, 255, 255, 0.1);
-} */
