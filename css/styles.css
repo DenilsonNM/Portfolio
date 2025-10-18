@@ -5,8 +5,9 @@
   --color-detail: #cccad6;
   --color-opacity: #eeeeeec4;
   --color-transparent: #00000000;
-  --color-neon-1: #ea176f;
-  --color-neon-2: #5bfff7;
+  --color-red: #f55356;
+  --color-yellow: #f5c453;
+  --color-blue: #53a9f5;
 }
 
 /* DARKMODE */
@@ -266,6 +267,20 @@ hr {
   background-color: var(--color-detail);
 }
 
+.figure_me_center {
+  max-width: 160px;
+  border-radius: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-detail);
+  transition: all .20s linear;
+  padding: 20px;
+  /* filter: saturate(0); */
+  /* border: 1px var(--color-detail) solid; */
+}
+
 .main_center {
   display: flex;
   align-items: center;
@@ -274,7 +289,7 @@ hr {
   gap: clamp(10px, 5vh, 50px);
   /* padding: 6vh 0 6vh 0; */
   /* padding: clamp(10px, 6vh, 50px) 0 clamp(10px, 6vh, 50px) 0; */
-  padding-top: clamp(10px, 6vh, 50px);
+  padding-top: clamp(80px, 10vh, 120px);
 }
 
 .typingeffect_css {
