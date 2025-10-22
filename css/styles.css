@@ -297,13 +297,14 @@ hr {
 }
 
 .figure_me_center {
-  max-width: 160px;
-  border-radius: 100%;
+  max-width: 130px;
+  /* border-radius: 100%; */
+  border-radius: 0 100% 100% 0;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--color-detail);
+  background-color: var(--color-base);
   transition: all .20s linear;
   padding: 20px;
   /* filter: saturate(0); */
@@ -318,7 +319,7 @@ hr {
   gap: clamp(10px, 5vh, 50px);
   /* padding: 6vh 0 6vh 0; */
   /* padding: clamp(10px, 6vh, 50px) 0 clamp(10px, 6vh, 50px) 0; */
-  padding-top: clamp(80px, 10vh, 120px);
+  padding-top: clamp(80px, 1vh, 100px);
 }
 
 .typingeffect_css {
