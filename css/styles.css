@@ -175,10 +175,10 @@ hr {
   width: 100%;
 }
 
-.h2_title_section i {
-  /* color: var(--color-blue); */
+/* .h2_title_section i {
+  color: var(--color-blue);
 
-}
+} */
 
 .span_title_section {
   /* background-color: var(--color-detail); */
@@ -230,9 +230,9 @@ hr {
   border-right: 2px var(--color-detail) solid;
 }
 
-.section_left i {
-  /* color: var(--color-red); */
-}
+/* .section_left i {
+  color: var(--color-red);
+} */
 
 .nav_left {
   position: sticky;
