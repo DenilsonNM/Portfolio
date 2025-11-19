@@ -1,4 +1,4 @@
-const phrases = ["Jr. Frontend Developer", "Computer Systems Engineer"];
+const phrases = ["Desarrollador Jr. Frontend", "Ingeniero en sistemas computacionales"];
 const textElement = document.getElementById("typingeffect");
 let phraseIndex = 0;
 let charIndex = 0;
