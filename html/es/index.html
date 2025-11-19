@@ -1,109 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" translate="no">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denilson Nuñez</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <base href="../../">
+  <link rel="icon" type="image/png" href="files/logo_dark.png">
+
+  <!-- ------------------------------------- -->
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- ------------------------------------- -->
+  <script type="application/javascript" src="js/wow.min.js"></script>
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="application/javascript" src="../js/darkmode.js" defer></script>
+  <script type="application/javascript" src="js/darkmode.js" defer></script>
 
+  <!-- ------------------------------------- -->
   <!-- ------------------------------------- -->
 
 </head>
 
 <body class="ancho">
+  <div class="div_fullpage">
 
-  <div class="div_page">
+    <section class="section_left">
 
-    <section class="section_main_left">
-
-      <nav class="nav_left">
+      <nav class="nav_left animate__animated animate__fadeInDown">
         <ul>
-          <li><a href="mailto:denilsonjnm31@gmail.com?subject=I%20want%20to%20know%20more%20about%20you">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Correo</span>
-            </a></li>
-          <li><a href="https://www.linkedin.com/in/denilson-nu%C3%B1ez-216322295/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a></li>
-          <li><a href="https://github.com/DenilsonNM" target="_blank"><i class="fa-brands fa-github"></i>
-              <span>Github</span></a>
-          </li>
-
-          <li>
-            <a href="#" id="theme_switch">
+          <li class="li_pc">
+            <a id="theme_switch">
               <i class="fa-solid fa-moon"></i>
               <i class="fa-solid fa-sun"></i> Tema</a>
           </li>
+          <li class="li_res">
+            <a id="theme_switch_res">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i></a>
+          </li>
           <li>
-            <a href="../index.html" class="lang_switch" data-lang="es">
-              <i class="fa-solid fa-language"></i> En</a>
+            <a href="index.html" class="lang_switch" data-lang="en">
+              <i class="fa-solid fa-language"></i> <span>In</span></a>
+          </li>
+          <br>
+          <div class="div_hr"></div>
+          <p class="p_hr_movile">|</p>
+          <br>
+          <li>
+            <a href="#tab1">
+              <i class="fa-solid fa-toolbox"></i> <span>Herramientas</span></a>
+          </li>
+          <li>
+            <a href="#tab2">
+              <i class="fa-solid fa-folder-open"></i> <span>Projectos</span></a>
+          </li>
+          <li>
+            <a href="#tab3">
+              <i class="fa-solid fa-user"></i> <span>Sobre mi</span></a>
+          </li>
+          <li>
+            <a href="#tab4">
+              <i class="fa-solid fa-handshake-simple"></i> <span>Servicios</span></a>
+          </li>
+          <li class="btn_up">
+            <a href="#">
+              <i class="fa-solid fa-turn-up"></i> <span>Inicio</span></a>
           </li>
         </ul>
       </nav>
     </section>
 
     <!-- ------------------------------------- -->
+    <!-- ------------------------------------- -->
 
-    <section class="section_main_center">
+    <section class="section_center">
 
-      <header class="header_center">
+      <header class="header_center ">
 
         <div class="div_header_figures">
           <figure class="figure_bg_center">
-            <img src="../img/background.gif" alt="">
+            <img src="files/background.gif" alt="">
           </figure>
           <figure class="figure_me_center">
-            <img src="../img/me.png" alt="">
+            <img src="files/logo_light.png" alt="">
+            <img src="files/logo_dark.png" alt="">
           </figure>
-          <div class="div_status">
+          <!-- <div class="div_status btn_1">
             <i class="fa-solid fa-circle-check"></i>
-            <p>Disponible para Trabajar</p>
-          </div>
+            <i class="fa-solid fa-circle-xmark"></i>
+            <i class="fa-solid fa-rotate fa-spin"></i>
+            <p>Working</p>
+          </div> -->
         </div>
 
         <main class="main_center">
-          <h1>Denilson Nuñez</h1>
-          <h3><span>Soy </span><span id="typingeffect" class="typingeffect_css"></span></h3>
-          <a href="" class="btn_cv"><i class="fa-solid fa-download"></i> Descargar CV</a>
+          <h1 class="dn">Denilson Nuñez</h1>
+          <h3 class="wow animate__animated animate__fadeInUp"><span>I am a </span><span id="typingeffect"
+              class="typingeffect_css"></span></h3>
+          <a href="files/CV_DENILSONJNM.pdf" class="btn_1" target="_blank"><i class="fa-solid fa-file-lines"></i>
+            Download CV</a>
           <div class="copyfield">
             <span id="copytext">denilsonjnm31@gmail.com</span>
-            <span id="copybtn">Copiar</span>
+            <span id="copybtn"><i class="fa-solid fa-copy"></i></span>
+          </div>
+          <div class="div_socials wow animate__animated animate__fadeInUp">
+            <ul>
+              <li><a href="mailto:denilsonjnm31@gmail.com?subject=I%20want%20to%20know%20more%20about%20you">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Mail</span>
+                </a></li>
+              <li><a href="https://www.linkedin.com/in/denilson-nu%C3%B1ez-216322295/" target="_blank"
+                  target="_blank"><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a></li>
+              <li><a href="https://github.com/DenilsonNM" target="_blank"><i class="fa-brands fa-github"></i>
+                  <span>Github</span></a>
+              </li>
+            </ul>
           </div>
         </main>
-
-        <div class="div_center">
-          <nav class="nav_tabs_center">
-            <ul class="ul_tabs">
-              <li><a href="#tab1"><i class="fa-solid fa-code"></i> Herramientas</a></li>
-              <li><a href="#tab2"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
-              <li><a href="#tab3"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
-              <li><a href="#tab4"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
-            </ul>
-          </nav>
-        </div>
       </header>
 
       <!-- ------------------------------------- -->
 
-      <section class="section_tools tab_content" id="tab1">
+      <section class="section_tools" id="tab1">
 
-        <a id="toggleAll">Ocultar</a>
+        <h2 class="h2_title_section"><span class="span_title_section"><i class="fa-solid fa-toolbox"></i>
+            Tools</span></h2>
+
+        <a id="toggleAll" class="btn_1"><i class="fa-solid fa-eye"></i> Show all</a>
 
         <div class="div_articles_tools">
-          <article>
 
-            <h2>Frontend</h2>
+          <article class="wow animate__animated animate__fadeInUp">
+
+            <h3>Frontend</h3>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-html5"></i>
-                HTML</h3>
+              <p><i class="fa-brands fa-html5"></i>
+                HTML</p>
             </div>
-            <ul class="ul_sumary_alt">
+            <ul class="ul_sumary">
               <li>UI/UX</li>
               <li>SEO</li>
               <li>Responsive</li>
@@ -111,8 +150,8 @@
             </ul>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-css3-alt"></i>
-                CSS</h3>
+              <p><i class="fa-brands fa-css3-alt"></i>
+                CSS</p>
             </div>
             <ul class="ul_sumary">
               <li>Flexbox</li>
@@ -122,8 +161,8 @@
             </ul>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-js"></i>
-                JavaScript</h3>
+              <p><i class="fa-brands fa-js"></i>
+                JavaScript</p>
             </div>
             <ul class="ul_sumary">
               <li>Interactivity</li>
@@ -133,15 +172,15 @@
             </ul>
           </article>
 
-          <article>
+          <article class="wow animate__animated animate__fadeInUp">
 
-            <h2>Backend</h2>
+            <h3>Backend</h3>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-php"></i>
-                PHP</h3>
+              <p><i class="fa-brands fa-php"></i>
+                PHP</p>
             </div>
-            <ul class="ul_sumary_alt">
+            <ul class="ul_sumary">
               <li>Database connection</li>
               <li>Security</li>
               <li>Form Management</li>
@@ -149,8 +188,8 @@
             </ul>
 
             <div class="div_details">
-              <h3><i class="fa-solid fa-database"></i>
-                MySQL</h3>
+              <p><i class="fa-solid fa-database"></i>
+                MySQL</p>
             </div>
             <ul class="ul_sumary">
               <li>Normalization</li>
@@ -160,15 +199,15 @@
             </ul>
           </article>
 
-          <article>
+          <article class="wow animate__animated animate__fadeInUp">
 
-            <h2>DevOps</h2>
+            <h3>DevOps</h3>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-github"></i>
-                GITHUB</h3>
+              <p><i class="fa-brands fa-github"></i>
+                GitHub</p>
             </div>
-            <ul class="ul_sumary_alt">
+            <ul class="ul_sumary">
               <li>Issue tracking</li>
               <li>Pull requests</li>
               <li>Collaborative</li>
@@ -176,8 +215,8 @@
             </ul>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-git-alt"></i>
-                GIT</h3>
+              <p><i class="fa-brands fa-git-alt"></i>
+                GIT</p>
             </div>
             <ul class="ul_sumary">
               <li>Version control</li>
@@ -188,15 +227,15 @@
 
           </article>
 
-          <article>
+          <article class="wow animate__animated animate__fadeInUp">
 
-            <h2>Aprendiendo</h2>
+            <h3>Learning</h3>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-vuejs"></i>
-                Vue.js</h3>
+              <p><i class="fa-brands fa-vuejs"></i>
+                Vue.js</p>
             </div>
-            <ul class="ul_sumary_alt">
+            <ul class="ul_sumary">
               <li>Component-based</li>
               <li>State management</li>
               <li>Vue Router</li>
@@ -204,8 +243,8 @@
             </ul>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-node-js"></i>
-                Node.js</h3>
+              <p><i class="fa-brands fa-node-js"></i>
+                Node.js</p>
             </div>
             <ul class="ul_sumary">
               <li>SSR</li>
@@ -215,15 +254,15 @@
 
           </article>
 
-          <article>
+          <article class="wow animate__animated animate__fadeInUp">
 
-            <h2>Extra</h2>
+            <h3>Extra</h3>
 
             <div class="div_details">
-              <h3><i class="fa-brands fa-figma"></i>
-                FIGMA</h3>
+              <p><i class="fa-brands fa-figma"></i>
+                Figma</p>
             </div>
-            <ul class="ul_sumary_alt">
+            <ul class="ul_sumary">
               <li>Prototyping</li>
               <li>Design systems</li>
               <li>Collaboration</li>
@@ -236,137 +275,210 @@
 
       <!-- ------------------------------------- -->
 
-      <section class="section_projects tab_content" id="tab2">
+      <section class="section_projects" id="tab2">
 
-        <article>
-          <figure>
-            <img src="../img/noimage.png" alt="">
-            <div class="div_hover_project">
-              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-              <a href="https://github.com/DenilsonNM/3DPrinter-Explorer.git">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </figure>
-          <h3 class="h3_title_project">3DPrinter Explorer</h3>
-          <p class="p_project_desc">Plataforma web instructora de prototipado rapido</p>
-          <div class="div_tags_project">
-            <p><i class="fa-brands fa-html5"></i>
-              HTML</p>
-            <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-            <p><i class="fa-brands fa-php"></i> PHP</p>
-            <p><i class="fa-solid fa-database"></i> MySQL</p>
-            <p><i class="fa-brands fa-js"></i> JS</p>
-          </div>
-        </article>
+        <h2 class="h2_title_section"><span class="span_title_section"><i class="fa-solid fa-folder-open"></i>
+            Projects</span></h2>
 
-        <article>
-          <figure>
-            <img src="../img/noimage.png" alt="">
-            <div class="div_hover_project">
-              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-              <a href="">
-                <i class="fa-brands fa-github"></i>
-              </a>
+        <div class="div_projects">
+          <article class="wow animate__animated animate__fadeInUp">
+            <figure>
+              <img src="files/3dp.png" alt="">
+              <div class="div_hover_project">
+                <a href="html/projectview.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://github.com/DenilsonNM/3DPrinter-Explorer.git" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </figure>
+            <h3 class="h3_title_project">3DPrinter Explorer</h3>
+            <p class="p_project_desc">Rapid prototyping web-based training platform</p>
+            <div class="div_tags_project">
+              <p><i class="fa-brands fa-html5"></i>
+                HTML</p>
+              <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+              <p><i class="fa-brands fa-php"></i> PHP</p>
+              <p><i class="fa-solid fa-database"></i> SQL</p>
+              <p><i class="fa-brands fa-js"></i> JS</p>
             </div>
-          </figure>
-          <h3 class="h3_title_project">Physiotherapy</h3>
-          <p class="p_project_desc">Pagina promocional</p>
-          <div class="div_tags_project">
-            <p><i class="fa-brands fa-html5"></i>
-              HTML</p>
-            <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-            <p><i class="fa-brands fa-js"></i> JS</p>
-          </div>
-        </article>
+          </article>
+
+          <article class="wow animate__animated animate__fadeInUp">
+            <figure>
+              <img src="files/psi.png" alt="">
+              <div class="div_hover_project">
+                <a href="https://denilsonnm.github.io/Physiotherapy-LandingPage/" target="_blank"><i
+                    class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/DenilsonNM/Physiotherapy-LandingPage.git" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </figure>
+            <h3 class="h3_title_project">Physiotherapy</h3>
+            <p class="p_project_desc">Promotional landing page for Physiotherapy services</p>
+            <div class="div_tags_project">
+              <p><i class="fa-brands fa-html5"></i>
+                HTML</p>
+              <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+              <p><i class="fa-brands fa-js"></i> JS</p>
+            </div>
+          </article>
+
+          <article class="wow animate__animated animate__fadeInUp">
+            <figure>
+              <img src="files/einc.png" alt="">
+              <div class="div_hover_project">
+                <a href="https://denilsonnm.github.io/Enjoy-In-English-Club/" target="_blank"><i
+                    class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/DenilsonNM/Enjoy-In-English-Club.git" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </figure>
+            <h3 class="h3_title_project">Enjoy In English Club</h3>
+            <p class="p_project_desc">Portfolio and promotional page for an English school</p>
+            <div class="div_tags_project">
+              <p><i class="fa-brands fa-html5"></i>
+                HTML</p>
+              <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+              <p><i class="fa-brands fa-js"></i> JS</p>
+            </div>
+          </article>
+
+          <!-- <article class="wow animate__animated animate__fadeInUp">
+            <figure>
+              <img src="files/noimage.png" alt="">
+              <div class="div_hover_project">
+                <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </figure>
+            <h3 class="h3_title_project">Project</h3>
+            <p class="p_project_desc">Description</p>
+            <div class="div_tags_project">
+              <p><i class="fa-brands fa-html5"></i>
+                HTML</p>
+              <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+              <p><i class="fa-brands fa-js"></i> JS</p>
+            </div>
+          </article> -->
+        </div>
+
+        <a class="btn_1"><i class="fa-solid fa-magnifying-glass-plus"></i> View more</a>
       </section>
 
       <!-- ------------------------------------- -->
 
-      <section class="section_aboutme tab_content" id="tab3">
+      <div class="div_parallax"></div>
 
-        <article class="article_aboutme">
+      <section class="section_aboutme" id="tab3">
 
-          <h3>Hola a todos <i class="fa-solid fa-hand"></i></h3>
-          <p>
-            Me desarrollo en áreas de tecnología, soporte y desarrollo web. Cuento con buenas actitudes sociales y
-            creativas
-            para
-            contribuir en
-            soluciones a problemáticas y lograr metas que beneficien a todos.
-            <br><br>
+        <h2 class="h2_title_section"><span class="span_title_section"><i class="fa-solid fa-user"></i> About me</span>
+        </h2>
 
-            Comprometido en aprovechar las herramientas tecnológicas que me brinden experiencia y conocimiento para
-            mejorar
-            mis
-            habilidades de vida como profesional.
-          </p>
-        </article>
+        <article class="article_aboutme_1 wow animate__animated animate__fadeInUp">
+          <figure>
+            <img src="files/noimage.png" alt="">
+          </figure>
 
-        <article class="article_aboutme">
-          <h3>Educación</h3>
-          <p>Instituto Tecnológico de Mérida | 2019 - 2025 | Ingeniería en Sistemas Computacionales</p>
-        </article>
+          <div>
+            <h3>Hi everyone</h3>
+            <br>
+            <p>
+              I work in the areas of technology, support and
+              web development. I have good social and creative attitudes
+              to contribute to solutions to problems and achieve goals that benefit everyone. <i
+                class="fa-solid fa-users"></i>
+              <br><br>
 
-        <article class="article_aboutme">
-          <h3>Habilidades blandas</h3>
-          <div class="div_tags_aboutme">
-            <p><i class="fa-solid fa-face-smile"></i></i>
-              Inteligencia emocional</p>
-            <p><i class="fa-solid fa-arrow-trend-up"></i> Resiliencia</p>
-            <p><i class="fa-solid fa-people-group"></i> Trabajo en equipo</p>
-            <p><i class="fa-solid fa-handshake-simple"></i> Servicio al cliente</p>
-            <p><i class="fa-solid fa-bolt"></i> Aprendizaje Rápido</p>
+              Committed to leveraging technological tools that provide me with experience and knowledge to improve my
+              life
+              skills as a
+              professional.
+            </p>
           </div>
         </article>
 
-        <article class="article_aboutme">
-          <h3>Pequeños datos sobre mí</h3>
+        <article class="article_aboutme_2 wow animate__animated animate__fadeInUp">
+          <h3>Education</h3>
+          <br>
+          <p>Instituto Tecnológico de Mérida | 2019 - 2025 | Computer Systems Engineer <i
+              class="fa-solid fa-user-tie"></i></p>
+        </article>
+
+        <article class="article_aboutme_2 wow animate__animated animate__fadeInUp">
+          <h3>Soft Skills</h3>
+          <br>
+          <div class="div_tags_aboutme">
+            <p><i class="fa-solid fa-face-smile"></i></i>
+              Emotional intelligence</p>
+            <p><i class="fa-solid fa-arrow-trend-up"></i> Resilience</p>
+            <p><i class="fa-solid fa-people-group"></i> Teamwork</p>
+            <p><i class="fa-solid fa-handshake-simple"></i> Customer service</p>
+            <p><i class="fa-solid fa-bolt"></i> Fast learning</p>
+          </div>
+        </article>
+
+        <!-- <article class="article_aboutme_2 wow animate__animated animate__fadeInUp">
+          <h3>Little facts about me</h3>
+          <br>
           <ul>
             <li>
-              <p>Soy un entusiasta de la ciencia y la tecnología desde que era un niño</p>
+              <p>I designed, drew and animated the background art using <a href="https://krita.org/"
+                  target="_blank">Krita <i class="fa-solid fa-paintbrush"></i></a></p>
             </li>
             <li>
-              <p>Diseñé, dibujé y animé el arte de fondo usando <a href="https://krita.org/">Krita <i
-                    class="fa-solid fa-paintbrush"></i></a></p>
+              <p>Know more about my work in digital drawing on <a
+                  href="https://www.instagram.com/pixel_conceptual_art?igsh=ODYzN3hqNzVjcmQ5" target="_blank">Instagram
+                  <i class="fa-brands fa-instagram"></i></a></p>
             </li>
             <li>
-              <p>Conoce más sobre mi trabajo en dibujo digital en <a
-                  href="https://www.instagram.com/pixel_conceptual_art?igsh=ODYzN3hqNzVjcmQ5">Instagram <i
-                    class="fa-brands fa-instagram"></i></a></p>
+              <p>I'm looking to belong to a community dedicated to Web Development</p>
             </li>
             <li>
-              <p>Estoy buscando pertenecer a una comunidad dedicada al Desarrollo Web</p>
-            </li>
-            <li>
-              <p>La parte creativa es lo mío, sin embargo me gustan los retos y por eso estoy aprendiendo mucho sobre
-                Desarrollo Backend
+              <p>The creative part is my thing, however I like challenges and that's why I'm learning a lot about
+                Backend Development
               </p>
             </li>
           </ul>
-        </article>
+        </article> -->
       </section>
 
       <!-- ------------------------------------- -->
 
-      <section class="section_services tab_content" id="tab4">
+      <section class="section_services" id="tab4">
 
-        <div class="div_wip">
-          <p><i class="fa-solid fa-rotate fa-spin"></i> Trabajo en progreso...</p>
+        <h2 class="h2_title_section"><span class="span_title_section"><i class="fa-solid fa-handshake-simple"></i>
+            Services</span></h2>
+
+        <div class="div_wip wow animate__animated animate__fadeInUp">
+          <p><i class="fa-solid fa-rotate fa-spin"></i> Work in progress...</p>
         </div>
       </section>
+
+      <a class="footer-btn-up" href="#"><i class="fa-solid fa-turn-up" aria-hidden="true"></i></a>
+
     </section>
 
     <!-- ------------------------------------- -->
+    <!-- ------------------------------------- -->
 
-    <section class="section_main_right"></section>
+    <section class="section_right"></section>
   </div>
 
   <!-- ------------------------------------- -->
-  <script src="../js/detailsumary.js"></script>
-  <script src="../js/typingeffect.js"></script>
-  <script src="../js/tabs.js"></script>
-  <script src="../js/copytext.js"></script>
+  <!-- ------------------------------------- -->
+
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/detailsumary.js"></script>
+  <script src="js/typingeffect.js"></script>
+  <!-- <script src="js/tabs.js"></script> -->
+  <!-- <script src="js/lang.js"></script> -->
+  <script src="js/copytext.js"></script>
 
 </body>
 
